@@ -1,0 +1,16 @@
+$imagenes = array( 
+    'database' => 'backup-database.png'
+    'backups online' => 'backup-online.png'
+    'maquina' => 'computadora.png'
+    'correo' => 'correo.png'
+    'ip' => 'direccionip.png'
+    'hosting' => 'hosting.png'
+    'impresora' => 'impresora.png'
+    'proveedor' => 'proveedores.png'
+    'router' => 'router.png'
+    'sistema operativo' => 'sistema-operativo.png'
+    'teamviewer' => 'teamviewer.png'
+    'telefono' => 'telefono.png'
+    'usuario' => 'usuario.png'
+    'wifi' => 'wifi.png'
+    )

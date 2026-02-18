@@ -1,0 +1,11 @@
+.content-wrapper {
+    background-color: #eee;
+  }
+
+.div-centrado {
+  display: flex;
+  justify-content: center;   /* centra horizontal */
+  align-items: center;       /* centra vertical */
+  height: 100vh;             /* ocupa toda la altura de la ventana */
+}
+
