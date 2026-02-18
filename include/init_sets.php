@@ -12,12 +12,12 @@ utiles::SessionVar('ICONOS_FOLDEROPEN', "far fa-folder-open");
 
 utiles::SessionVar('SISTEMA_INICIALIZADO', "NO");
 
-define( "BASE_URL"               ,  "http://localhost/miscuentas12/" );
-define( "BASE_URL_IMG"           ,  "http://localhost/miscuentas12/views/img/" );
-define( "BASE_URL_VIEWS"         ,  "http://localhost/miscuentas12/views/" );
+define( "BASE_URL"               ,  "http://localhost/prestamos/" );
+define( "BASE_URL_IMG"           ,  "http://localhost/prestamos/views/img/" );
+define( "BASE_URL_VIEWS"         ,  "http://localhost/prestamos/views/" );
 define( "PATH_ICONOS_CUENTAS"    ,  "/views/img/iconos/cuentas/" );
 define( "PATH_ICONOS_TIPOCUENTAS",  "/views/img/iconos/tipocuentas/" );
-define( "BASE_URL_JS"            ,  "http://localhost/miscuentas12/js/" );
+define( "BASE_URL_JS"            ,  "http://localhost/prestamos/js/" );
 
 // =================================
 // Activar el registro de errores

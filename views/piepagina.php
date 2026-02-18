@@ -1,9 +1,9 @@
         <!-- Main Footer -->
         <footer class="main-footer">
-            <strong>Copyright &copy; 2020-2026 <a href="https://MisCuentas.online">Prestamos</a>.</strong>
+            <strong>Copyright &copy; 2026 <a href="https://MisCuentas.online">Prestamos</a>.</strong>
             All rights reserved.
             <div class="float-right d-none d-sm-inline-block">
-                <b>Version</b> 1.2.0
+                <b>Version</b> 6.0.0
             </div>
         </footer>
     </div>

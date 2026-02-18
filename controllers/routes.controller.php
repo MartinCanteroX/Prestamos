@@ -6,7 +6,7 @@
             $metodo = "main";
             $param_dato = "";
             $param = "";
-            $basepath = "/miscuentas12/";
+            $basepath = "/prestamos/";
 
             // =================================
             // Controlador y metodo solicitado
