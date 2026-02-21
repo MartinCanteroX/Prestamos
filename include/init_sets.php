@@ -9,6 +9,7 @@ utiles::SessionVar('ICONOS_EDITAR', "fas fa-pencil-alt");
 utiles::SessionVar('ICONOS_CONFIRMAR', "fas fa-check");
 utiles::SessionVar('ICONOS_ELIMINAR', "far fa-trash-alt");
 utiles::SessionVar('ICONOS_FOLDEROPEN', "far fa-folder-open");
+utiles::SessionVar('ICONOS_VER', "far fa-folder-open");
 
 utiles::SessionVar('SISTEMA_INICIALIZADO', "NO");
 

@@ -24,7 +24,7 @@
 
     </div><!-- /.container-fluid -->
   </section>
-  <!-- /.content -->
+  <!-- /.Main content -->
 
 </div>
 <!-- /.content-wrapper -->

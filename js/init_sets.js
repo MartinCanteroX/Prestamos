@@ -1,1 +1,1 @@
-var BASE_URL = "/miscuentas12/";
+var BASE_URL = "/prestamos/";
