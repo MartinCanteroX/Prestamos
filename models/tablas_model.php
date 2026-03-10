@@ -5,9 +5,10 @@ class tablas_model {
     private $nombre = '';
     private $tabla = "";
 
-    function __construct( $id = 0, $nombre = ''){
+    function __construct( $id = 0, $nombre = '', $tabla = ''){
         $this->id = $id;
         $this->nombre = $nombre;
+        $this->tabla = $tabla;
     }
 
     // set/get id
@@ -30,15 +31,36 @@ class tablas_model {
         return $this->nombre;
     }
     
+    // set/get tabla
+    // -----------
+    public function set_tabla($nuevo_tabla){;
+        $this->tabla = $nuevo_tabla;
+    }
+    
+    public function get_tabla(){
+        return $this->tabla;
+    }
+    
+
     // ****************************************
     // Devolver todos los registros de la tabla
     // ****************************************
-    public function getAll(){
+    public function getAll( $sql = ""){
         $db = new database();
-        $sql = 'select id, nombre from ' . $this->tabla;
+
+        if ( ! $sql ){
+            $sql = "select * from " . $this->tabla;
+        }
         $result = $db->query( $sql );
 
-        // convertir en un array asociativo para devolver
+        // convertir en un array 
+        $listaarray = [];
+
+        foreach( $result as $it => $item ){
+            $listaarray[] = array( $item[0], $item[1] );        
+        }
         
+        // devolver
+        return $listaarray;
     }
 }

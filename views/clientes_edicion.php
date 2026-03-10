@@ -78,7 +78,7 @@
                                         <div class="form-group col-md-4">
                                             <label>Tipo Documento</label>
                                             <select class="form-control" name="tipodoc" id="tipodoc">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tiposdocumHtml; ?>
                                             </select>
                                         </div>
                                         <div class="form-group  col-md-4">
@@ -97,13 +97,13 @@
                                         <div class="form-group col-md-4">
                                             <label>Tipo IVA</label>
                                             <select class="form-control" name="tipoiva" id="tipoiva">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tiposivaHtml; ?>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-4">
                                             <label>Tipo IIBB</label>
                                             <select class="form-control" name="tipoiibb" id="tipoiibb">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tiposiibbHtml; ?>
                                             </select>
                                         </div>
                                         <div class="form-group  col-md-4">
@@ -124,7 +124,7 @@
                                         </div>
                                         <!-- Nro -->
                                         <div class="form-group col-md-2">
-                                            <label for="localidad">Numero</label>
+                                            <label for="callenro">Numero</label>
                                             <input type="text" class="form-control fv-novacio" id="callenro" name="callenro" placeholder="numero">
                                         </div>
                                         <!-- Piso -->
@@ -150,14 +150,14 @@
                                         <div class="form-group col-md-5">
                                             <label>Localidad</label>
                                             <select class="form-control" name="localidad" id="localidad">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tablocalidadesHtml; ?>
                                             </select>
                                         </div>
                                         <!-- Provincia -->
                                         <div class="form-group col-md-4">
                                             <label>Provincia</label>
                                             <select class="form-control" name="provincia" id="provincia">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tabprovinciasHtml; ?>
                                             </select>
                                         </div>
                                     </div>
@@ -196,13 +196,13 @@
                                         <div class="form-group col-md-4">
                                             <label>Sexo</label>
                                             <select class="form-control" name="sexo" id="sexo">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tipossexoHtml; ?>
                                             </select>
                                         </div>
                                         <div class="form-group col-md-5">
                                             <label>Estado Civil</label>
                                             <select class="form-control" name="estcivil" id="estcivil">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tiposestcivilHtml; ?>
                                             </select>
                                         </div>
                                     </div>
@@ -225,7 +225,7 @@
                                         <div class="form-group col-md-4">
                                             <label>Tipo Documento</label>
                                             <select class="form-control" name="cony-tipodoc" id="cony-tipodoc">
-                                                <!-- <?php echo $listacuentas; ?> -->
+                                                <?php echo $tiposdocumHtml; ?>
                                             </select>
                                         </div>
                                         <div class="form-group  col-md-4">

@@ -15,9 +15,26 @@ class clientes
     */
     public function new()
     {
-
         // cargar todas las tablas necesarias para la edicion
-        $lista
+        $tiposiva = new tiposiva_model();
+        $tablocalidades = new tablalocalidades_model();
+        $tabprovincias = new tablaprovincias_model();
+        $tiposestcivil = new tiposestciviles_model();
+        $tipossexo = new tiposexo_model();
+        $tiposdocum = new tiposdocumentos_model();
+        $tiposiibb = new tiposiibb_model();
+
+        // Instanciar la clase 
+        $utilesforms = new utilesforms();
+
+        // Generar las listas en version HTML
+        $tiposivaHtml = $utilesforms->genComboFromArray( $tiposiva->getAll(), "listaiva", 0, "","(seleccionar)");
+        $tablocalidadesHtml = $utilesforms->genComboFromArray( $tablocalidades->getAll(), "tablocalidades", 0, "","(seleccionar)");
+        $tabprovinciasHtml = $utilesforms->genComboFromArray( $tabprovincias->getAll(), "tabprovincias", 0, "","(seleccionar)");
+        $tiposestcivilHtml = $utilesforms->genComboFromArray( $tiposestcivil->getAll(), "tiposestcivil", 0, "","(seleccionar)");
+        $tipossexoHtml = $utilesforms->genComboFromArray( $tipossexo->getAll(), "tipossexo", 0, "","(seleccionar)");
+        $tiposdocumHtml = $utilesforms->genComboFromArray( $tiposdocum->getAll(), "tiposdocum", 0, "","(seleccionar)");
+        $tiposiibbHtml = $utilesforms->genComboFromArray( $tiposiibb->getAll(), "tiposiibb", 0, "","(seleccionar)");
 
         // presentar la pantalla para su edicion
         include "views/clientes_edicion.php";
