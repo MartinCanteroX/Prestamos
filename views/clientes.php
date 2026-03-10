@@ -11,8 +11,7 @@
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <!-- <li class="breadcrumb-item"><a href="#">Home</a></li> -->
-                        <li class="breadcrumb-item active"><a href="<?php echo BASE_URL ?>clientes/nuevo">Nuevo</a></li>
+                    <li class="breadcrumb-item active"><a href="#" id="btn_nuevo">Nuevo</a></li>
                     </ol>
                 </div>
             </div>
@@ -95,11 +94,9 @@
 <!-- -------------------------------- -->
 <!-- Edicion rapida de un vencimiento -->
 <!-- -------------------------------- -->
-<!--
-<div class='modal' id='vencimientos-edicion-simple'>
-    <?php include "vencimiento-modal.php" ?>
+<div class='modal' id='cliente-edicion'>
+    <?php include "cliente.modal.php" ?>
 </div>
--->
 <!-- ----------------------------------- -->
 <!-- /. Edicion rapida de un vencimiento -->
 <!-- ----------------------------------- -->

@@ -1,5 +1,5 @@
 <?php
-class clientes 
+class clientes
 {
 
     /*
@@ -8,6 +8,27 @@ class clientes
     public function main()
     {
         include "views/clientes.php";
+    }
+
+    /*
+        Presentar la pantalla para un nuevo cliente
+    */
+    public function new()
+    {
+
+        // cargar todas las tablas necesarias para la edicion
+        $lista
+
+        // presentar la pantalla para su edicion
+        include "views/clientes_edicion.php";
+    }
+
+    /*
+        Cargar los datos del cliente y presentarlo para su edicion
+    */
+    public function edit( $parametro, $datos )
+    {
+        include "views/clientes_edicion.php";
     }
 
     /*

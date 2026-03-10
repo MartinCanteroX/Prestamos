@@ -9,3 +9,8 @@
   height: 100vh;             /* ocupa toda la altura de la ventana */
 }
 
+.form-wrapper {
+   height: calc(100vh - 20px); /* ocupa toda la altura visible menos un margen */
+  overflow-y: auto;           /* scroll solo dentro del formulario */
+  padding-bottom: 1rem;       /* espacio para que no quede pegado al borde */
+}
