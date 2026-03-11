@@ -1,13 +1,24 @@
 <?php
-class database {
-    private $host = "localhost";
-    private $dbname = "prestamos";
-    private $username = "root";
-    private $password = "";
+
+class Database {
+    private $host;
+    private $dbname;
+    private $username;
+    private $password;
     private $conn;
 
-    // Automaticamente se conecta al server
-    public function __construct(){
+    // Se permite configurar datos de conexión; por defecto apunta a la BD local "prestamos"
+    public function __construct(
+        $host = "localhost",
+        $dbname = "prestamos",
+        $username = "root",
+        $password = ""
+    ){
+        $this->host     = $host;
+        $this->dbname   = $dbname;
+        $this->username = $username;
+        $this->password = $password;
+
         $this->connect();
     }
 
@@ -23,7 +34,10 @@ class database {
             return $this->conn;
 
         } catch (PDOException $e) {
-            die("Error de conexión: " . $e->getMessage());
+            if (class_exists('depuracion')){
+                depuracion::RegistrarError($e);
+            }
+            throw $e;
         }
     }
 
@@ -35,7 +49,10 @@ class database {
             return $stmt;
 
         } catch (PDOException $e) {
-            die("Error en la consulta: " . $e->getMessage());
+            if (class_exists('depuracion')){
+                depuracion::RegistrarError($e);
+            }
+            throw $e;
         }
     }
 

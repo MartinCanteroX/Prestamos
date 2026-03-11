@@ -30,7 +30,9 @@ class cliente_model{
         // TODO : Cambiar cuando esten todos los campos en la tabla de clientes
         $param =[];
         $sql = "select * from clientes "; 
-        $listaclientes   = $this->db->query( $sql, $param );
+
+        $stmt = $this->db->query( $sql, $param );
+        $listaclientes = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         // Cerrar conexion
         $this->db->close();

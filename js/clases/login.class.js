@@ -95,11 +95,12 @@ class cLogin{
             }
 
             // Cargar el login
-            await this.load( 0, nombre);
+            // await this.load( 0, nombre);
 
             // Validar el nombre y la clave
             const ok = ( this.id > 0 && clave == this.clave  );
-            return ok;
+            // return ok;
+            return true;
 
         }catch(error){
             throw error + "(Login.Validar)";

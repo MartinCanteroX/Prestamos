@@ -4,6 +4,7 @@
 class cClientes{
     constructor(id){
         this._nombre = "";
+        this._id = id;
     }
 
     /* set/get nombre
@@ -16,6 +17,18 @@ class cClientes{
     get nombre(){
         return this._nombre;
     }
+
+    /* set/get nombre
+       -----------
+    */
+    set id(nuevoid){;
+        this._id = nuevoid;
+    }
+    
+    get nombre(){
+        return this._id;
+    }
+    
     
     //
     // Recuperar clientes en formato HTML

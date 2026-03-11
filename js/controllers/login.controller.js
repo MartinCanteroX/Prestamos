@@ -32,7 +32,7 @@ function pedirUsuario(){
 
     try{
         // cargar el resto de los datos en la pantalla
-        objTitulo.innerHTML = "Bienvenido a MisCuentas";
+        objTitulo.innerHTML = "Bienvenido";
 
         // mostrar el egreso
         objBotonConfirmar.addEventListener("click", aceptarUsuario);
